@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 header {
   height: 412px;
@@ -106,9 +107,8 @@ nav li {
   font-size: 15px;
 }
 
-.dropdown .Option{
+.dropdown .Option {
   color: #007bff;
-  
 }
 
 .search-input {
@@ -144,10 +144,9 @@ nav li {
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease;
-
 }
 
-.card:hover{
+.card:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
@@ -168,17 +167,258 @@ nav li {
   padding-top: 10px;
   padding-left: 10px;
   margin-bottom: 0px;
-
 }
 
-.info span{
+.info span {
   font-size: 23px;
   color: #262626;
 }
 
-.info p{
+.info p {
   margin-top: 0px;
   font-size: 18px;
   color: #5b5b5b;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Collection CSS */
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.collection .col_img {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+
+.collection .col_head {
+  height: 47px;
+}
+
+.collection .col_para {
+  font-family:  Georgia, Times, "Times New Roman", serif;
+  color: rgb(55, 55, 55);
+  display: flex;
+  align-items: center;
+  height: 25px;
+  align-content: space-around;
+  justify-content: space-between;
+  margin: 15px 0px 25px 0px;
+}
+
+.collection .col_para span{
+  color: rgba(224, 53, 70, 0.638);
+}
+.collection .card {
+  height: 320px;
+  width: 268px;
+}
+.collection .col_img .col_card {
+  height: 320px;
+  width: 268px;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+.col_card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.collection .col_info {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 275px;
+  width: 100%;
+}
+
+.col_info h4 {
+  margin: 0px 0px 0px 8px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.col_info span {
+  margin: 0px 0px 0px 8px;
+}
+
+/* Location class Start */
+.location {
+  margin-top: 50px;
+}
+.location .loc_head p {
+  color: rgb(54, 54, 54);
+  font-size: 2.1rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.localities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.localities .loc_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 357px;
+  height: 79px;
+  border-radius: 5px;
+  padding: 0px 10px 0px 8px;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.loc_desc p {
+  font-size: 23px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+  font-weight: 400;
+  color: rgb(28, 28, 28);
+}
+
+.loc_desc span {
+  color: gray;
+  size: 20px;
+}
+.loc_See_more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 372px;
+  height: 79px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+
+}
+
+
+/* App download class start */
+
+.app{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255,251,247);
+  margin-top: 100px;
+
+}
+
+.app .app_img{
+  width: 410px;
+  height: 450px;
+  overflow: hidden;
+  object-fit: fit;
+}
+
+.app .app_img img{
+  width: 410px;
+  height: 450px;
+}
+
+.step{
+  width: 450px;
+  height: 395px;
+  /* background-color: #ff7878; */
+  
+}
+.step h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: rgb(28, 28, 28);
+    font-weight: 500;
+    font-size: 3.4rem;
+}
+.step p{
+  margin-top: 25px;
+  color: rgba(54, 54, 54, 0.66);
+  font-size: 18px;
+}
+
+.step .apps{
+  display: flex;
+  gap: 10px;
+}
+
+.step .apps img{
+  width: 137px;
+  height: 40px;
+}
+
+.app .radio_input{
+  margin-bottom: 10px;
+}
+.step .email{
+  width: 450px;
+  height: 48px;
+margin-top: 30px;
+font-size: 20px ;
+}
+
+.step .email input{
+  width: 292px;
+  height: 40px;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 3px;
+  /* padding-left: 10px; */
+}
+.step .phone{
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+  /* background-color: #9eb81e; */
+  position: relative;
+  width: 450px;
+  height: 48px;
+
+}
+.step .wrap{
+  display: flex;
+  width: 292px;
+  height: 44px;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 5px;
+}
+.tel_input{
+  height: 42px;
+  position: absolute;
+  left: 70px;
+  border: none;
+}
+#countryCode{
+  position: absolute;
+width: 69px;
+height: 42px;
+border: none;
+padding-left: 15px;
+}
+.phone_btn{
+  position: absolute;
+  left: 300px;
+  top: 1px;
+}
+.step button{
+  background-color: #ff7878;
+  border: none;
+  border-radius: 5px;
+  width: 140px;
+  height: 44px;
+}
+
+input[type="radio"] {
+  transform: scale(1.5); /* Increase the size by 1.5 times */
+  margin-right: 10px; /* Optional: Add some space between the radio and label */
 }

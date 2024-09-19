@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zomato</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
+    <script src="script.js"></script>
     <!-- Header Start here -->
     <header>
       <img src="./assets/header.avif" alt="" />
@@ -34,7 +39,9 @@
         <div class="location-search">
           <img src="./assets/location.png" alt="" />
           <select class="dropdown" aria-label="Sector 16, Noida, Utta">
-            <option class="Option" value="">Sector 16, Noida, UttarPradesh</option>
+            <option class="Option" value="">
+              Sector 16, Noida, UttarPradesh
+            </option>
           </select>
           <img src="./assets/search.png" alt="" />
           <input
@@ -55,6 +62,7 @@
           <p>Stay home and order to your doorstep</p>
         </div>
       </div>
+
       <div class="card">
         <img src="./assets/c2.avif" alt="" />
         <div class="info">
@@ -62,13 +70,190 @@
           <p>View the city's famous dining view</p>
         </div>
       </div>
+
       <div class="card">
         <img src="./assets/c3.jpeg" alt="" />
         <div class="info">
           <span>Live events</span>
-          <p>Discover India's best events and concert </p>
+          <p>Discover India's best events and concert</p>
+        </div>
+      </div>
+
+      <!-- collection starts here -->
+      <div class="collection">
+        <div class="col_head">
+          <h1>Collections</h1>
+        </div>
+        <div class="col_para">
+          <p>
+            Explore curated lists of top restaurants, cafes, pubs, and bars in
+            Delhi NCR, based on trends
+          </p>
+          <span
+            >All collections in Delhi NCR <i class="fa-solid fa-play"></i
+          ></span>
+        </div>
+        <div class="col_img">
+          <div class="col_card">
+            <img src="./assets/col1.png" alt="" srcset="" />
+            <div class="col_info">
+              <h4>Top Trending spots</h4>
+              <span>40 Places</span>
+            </div>
+          </div>
+          <div class="col_card">
+            <img src="./assets/col2.png" alt="" srcset="" />
+            <div class="col_info">
+              <h4>Best Insta-worthy Places</h4>
+              <span>45 Places</span>
+            </div>
+          </div>
+          <div class="col_card">
+            <img src="./assets/col3.png" alt="" srcset="" />
+            <div class="col_info">
+              <h4>Newly Opened Places</h4>
+              <span>30 Places</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Localities start here -->
+      <div class="location">
+        <div class="loc_head">
+          <p>Population Localities in and around <strong> Delhi NCR</strong></p>
+        </div>
+        <div class="localities">
+          <div class="loc_btn">
+            <div class="loc_desc">
+              <p>Connaught Place</p>
+              <span>289 places</span>
+            </div>
+            <div class="icon"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+          <div class="loc_btn">
+            <div class="loc_desc">
+              <p>Sector 29</p>
+              <span>149 places</span>
+            </div>
+            <div class="icon"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+          <div class="loc_btn">
+            <div class="loc_desc">
+              <p>Sector 18, Noida</p>
+              <span>235 places</span>
+            </div>
+            <div class="icon"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+          <div class="loc_btn">
+            <div class="loc_desc">
+              <p>Rajouri Garden</p>
+              <span>400 places</span>
+            </div>
+            <div class="icon"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+          <div class="loc_btn">
+            <div class="loc_desc">
+              <p>Saket</p>
+              <span>357 places</span>
+            </div>
+            <div class="icon"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+          <div class="loc_btn">
+            <div class="loc_desc">
+              <p>DLF Cyber City</p>
+              <span>190 places</span>
+            </div>
+            <div class="icon"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+          <div class="loc_btn">
+            <div class="loc_desc">
+              <p>Golf Course Road</p>
+              <span>168 places</span>
+            </div>
+            <div class="icon"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+          <div class="loc_btn">
+            <div class="loc_desc">
+              <p>DLF Phase 4</p>
+              <span>239 places</span>
+            </div>
+            <div class="icon"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+          <div class="loc_See_more">
+            <div class="loc_desc">
+              <p>See More</p>
+            </div>
+            <div class="icon"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Download App section start -->
+    <section class="app">
+      <div class="app_img">
+        <img src="./assets/mob.avif" alt="" />
+      </div>
+
+      <div class="step">
+        <h1>Get the Zomato app</h1>
+        <p>
+          We will send you a link, open it on your phone to download the app
+        </p>
+
+        <div class="radio_input">
+          <input
+            type="radio"
+            name="contact"
+            id="emailOption"
+            checked
+            onclick="showInput()"
+          />
+          Email
+          <input
+            type="radio"
+            name="contact"
+            id="phoneOption"
+            onclick="showInput()"
+          />
+          Phone
+        </div>
+
+        <div class="email" id="emailField">
+          <input type="email" placeholder="Email" />
+          <button>Share App Link</button>
+        </div>
+
+        <div class="phone" id="phoneField">
+          <div class="wrap">
+            <select id="countryCode">
+              <option value="+1">+91</option>
+              <option value="+44">+44</option>
+              <option value="+91">+1</option>
+              <option value="+61">+61 </option>
+              <option value="+81">+81</option>
+            </select>
+            <span>|</span>
+            <input
+              class="tel_input"
+              type="tel"
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <button class="phone_btn">Share App Link</button>
+        </div>
+
+        <div class="last_p_step">
+          <p>Download app from</p>
+          <div class="apps">
+            <img src="./assets/playstore.webp" alt="" />
+            <img src="./assets/appstore.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore option near me start from here -->
   </body>
 </html>
