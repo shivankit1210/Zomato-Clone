@@ -488,7 +488,9 @@ input[type="radio"] {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin: 0px 0px 10px 80px;
+  gap: 10px;
 }
 
 .footer-section{
@@ -522,6 +524,11 @@ input[type="radio"] {
   text-decoration: none;
   font-size: 14px;
 }
+.footer-section ul li a:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: #313131;
+}
 
 .footer-section ul li a:hover {
   text-decoration: underline;
@@ -538,16 +545,31 @@ input[type="radio"] {
   height: 24px;
   margin-right: 10px;
 }
-
+.footer-section_socials{
+  display: flex;
+  flex-direction: column;
+}
+.footer-section_socials img{
+  width: 137px;
+  height: 40px;
+  margin: 10px 0px 0px 0px;
+}
 .footer-section_socials ul{
  display: flex;
- background-color: #666;
+ justify-content: flex-start;
+ /* background-color: #666; */
+ gap: 10px;
+ margin-left: -37px;
+ margin-top: 0px;
 }
 
 .footer-section_socials ul li{
   list-style: none;
-  margin-left: 0;
+  color: #262626;
   
+}
+.footer-section_socials ul li:hover{
+  text-decoration: none;
 }
 .flag-lang button {
   background-color: transparent;
@@ -558,14 +580,21 @@ input[type="radio"] {
 }
 
 .footer-bottom {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   color: #999;
   font-size: 12px;
+  /* background-color: #007bff; */
+  width: 1400px;
 }
 
 .footer-bottom p {
+  width: 86vw;
+  color: #474747;
   margin: 10px 0;
+  font-size: 15px;
 }
 
 .language_input{
@@ -590,6 +619,9 @@ input[type="radio"] {
   height: 42px;
   background-color: #F7F7F7;
 }
+.nation:hover{
+  cursor: pointer;
+}
 .nation img{
   width: 25px;
   height: 17px;
@@ -604,11 +636,16 @@ input[type="radio"] {
   width: 110px;
   background-color: #F7F7F7;
 }
+.language:hover{
+  cursor: pointer;
+}
 #country{
   font-size: 15px;
   border: none;
   background-color: #F7F7F7;
-
+}
+#country:hover{
+  cursor: pointer;
 }
 #language-inner{
   font-size: 15px;
@@ -616,4 +653,12 @@ input[type="radio"] {
   width: 75px;
   background-color: #F7F7F7;
 
+}
+#language-inner:hover{
+  cursor: pointer;
+}
+
+hr{
+  margin-top: 45px;
+  width: 88vw;
 }
