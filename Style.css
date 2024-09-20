@@ -601,6 +601,7 @@ input[type="radio"] {
   color: #474747;
   margin: 10px 0;
   font-size: 15px;
+  word-spacing: 3px;
 }
 
 .language_input{
