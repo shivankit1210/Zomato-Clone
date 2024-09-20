@@ -16,3 +16,8 @@ function showInput() {
         emailField.style.display = 'none';
     }
 }
+
+window.onload = function() {
+    document.getElementById('emailField').style.display = 'block'; // Show email by default
+    document.getElementById('phoneField').style.display = 'none';  // Hide phone by default
+};

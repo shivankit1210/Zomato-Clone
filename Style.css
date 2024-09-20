@@ -115,7 +115,9 @@ nav li:hover{
 }
 
 .dropdown .Option {
-  color: #007bff;
+  color: #ff7878;
+  background-color: white;
+
 }
 
 .search-input {
@@ -531,7 +533,7 @@ input[type="radio"] {
 }
 
 .footer-section ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .flag-lang {
@@ -565,8 +567,12 @@ input[type="radio"] {
 
 .footer-section_socials ul li{
   list-style: none;
-  color: #262626;
-  
+  color: #262626;  
+}
+.footer-section_socials ul li a{
+  color: black;
+  width: 22px;
+  height: 22px;
 }
 .footer-section_socials ul li:hover{
   text-decoration: none;
