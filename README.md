@@ -1,1 +1,1 @@
-Live Preview of Zomato clone is here : https://shivankit1210.github.io/Zomato-Clone/
+Live Preview of Zomato clone is here : https://zomato-the-taste-of-india.netlify.app/
